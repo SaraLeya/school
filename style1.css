@@ -1,35 +1,3 @@
-@media (max-width: 767px) {
-  .center {
-    padding-left: 16px;
-    padding-right: 16px;
-  }
-  .top {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    padding-top: 238px;
-  }
-  .top__contant {
-    display: flex;
-    align-items: center;
-    text-align: center;
-  }
-  .top__title {
-    font-size: 32px;
-    line-height: 39px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    color: aqua;
-  }
-  .top__text {
-    font-size: 14px;
-    line-height: 22px;
-  }
-  .top__contant {
-    padding-left: none;
-  }
-}
 * {
   margin: 0%;
   padding: 0%;
@@ -55,6 +23,8 @@
   background-size: cover;
   padding-top: 217px;
   padding-left: 120px;
+  align-items: center;
+  justify-content: space-around;
 }
 .top__contant {
   padding-bottom: 493px;
@@ -99,9 +69,12 @@
   padding-bottom: 128px;
   display: flex;
   flex-direction: column-reverse;
+  justify-content: space-around;
 }
 .gamebox__content {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   gap: 32px;
 }
 .gamebox__content_cart {
@@ -128,4 +101,37 @@
   color: #FFFFFF;
   margin-left: 32px;
   margin-bottom: 32px;
+}
+
+@media (max-width: 767px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .top {
+    display: grid;
+    align-items: center;
+    text-align: center;
+    padding-top: 238px;
+  }
+  .top__title {
+    font-size: 32px;
+    line-height: 39px;
+    align-items: center;
+    text-align: center;
+    color: aqua;
+    width: 343px;
+  }
+  .top__text {
+    font-size: 14px;
+    line-height: 22px;
+    width: 343px;
+  }
+  .top__contant {
+    padding-bottom: 238px;
+  }
+  .gamebox__content_cart {
+    width: 343px;
+    height: 300px;
+  }
 }/*# sourceMappingURL=style1.css.map */

@@ -1,7 +1,5 @@
 $color-text: #FFFFFF;
 
-@import 'mobile';
-
 * {
     margin: 0%;
     padding: 0%;
@@ -26,6 +24,8 @@ $color-text: #FFFFFF;
     background-size: cover;
     padding-top: 217px;
     padding-left: 120px;
+    align-items: center;
+    justify-content: space-around;
 
     &__contant {
        padding-bottom: 493px;
@@ -73,9 +73,12 @@ $color-text: #FFFFFF;
     padding-bottom: 128px;
     display: flex;
     flex-direction: column-reverse;
+    justify-content: space-around;
 
     &__content {
         display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
         gap: 32px;
 
         &_cart {
@@ -110,3 +113,4 @@ $color-text: #FFFFFF;
         }
     }
 }
+@import 'mobile';
